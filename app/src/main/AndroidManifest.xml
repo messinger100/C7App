@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cucei_mobile.c7" >
+
+    <uses-sdk
+        android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <receiver android:name=".FlashLight$switchButtonListener" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/c7_icono_nuevo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Inicio"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_inicio"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name=".Menu_Cultura"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_menu__cultura"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="twitter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name=".Menu_Noticias"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_menu__noticias"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RadioNoticias"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_radio_noticias"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RadioNoticiasTablet"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_radio_noticias"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name=".RadioCultura"
+            android:label="@string/title_activity_radio_cultura"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RadioCulturaTablet"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_radio_cultura"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name=".MenuProgramacion_Cultura"
+            android:label="@string/title_activity_menu_programacion__cultura"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NoticiasRecientes"
+            android:label="@string/title_activity_noticias_recientes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NoticiasTablet"
+            android:label="@string/title_activity_noticias_recientes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NoticiasMejorado"
+            android:label="@string/title_activity_noticias_recientes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AccesibilidadCultura"
+            android:label="@string/title_activity_accesibilidad_cultura"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AccesibilidadNoticias"
+            android:label="@string/title_activity_accesibilidad_noticias"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MenuProgramacion_Noticias"
+            android:label="@string/title_activity_menu_programacion__noticias"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MenuProgramacionPlataforma_Cultura"
+            android:label="@string/title_activity_menu_programacion_plataforma__cultura"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MenuProgramacionPlataforma_Noticias"
+            android:label="@string/title_activity_menu_programacion_plataforma__noticias"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MenuRadio_Cultura"
+            android:label="@string/title_activity_menu_radio__cultura"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MenuRadio_Noticias"
+            android:label="@string/title_activity_menu_radio__noticias"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WebViewC7"
+            android:label="@string/title_activity_web_view_c7"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TV"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_tv"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name=".RedesSociales"
+            android:label="@string/title_activity_redes_sociales" >
+        </activity>
+    </application>
+
+</manifest>

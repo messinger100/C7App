@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/footer"
+        android:id="@+id/scrollView">
+
+    </ScrollView>
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#fd000000"
+        style="@android:style/ButtonBar"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+
+        <!--INICIO-->
+        <Button android:id="@+id/btnIniciofromCultura"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/inicio_btnx"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+
+        <!--MENU-->
+        <Button android:id="@+id/btnMenufromCultura"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/menu_btnx"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+
+        <!--PROGRAMACIÓN-->
+        <Button android:id="@+id/btnProgramacionfromCultura"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:background="@drawable/prgn_btnx" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/relative"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/txvTituloProgNoticias">
+        </android.support.v4.view.ViewPager>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/tumblr"
+            android:id="@+id/imgTumblr"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="41dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/facebook"
+            android:id="@+id/imgFacebook"
+            android:layout_alignTop="@+id/imgTumblr"
+            android:layout_toRightOf="@+id/imgTumblr"
+            android:layout_toEndOf="@+id/imgTumblr" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/instagram"
+            android:id="@+id/imgInstagram"
+            android:layout_alignTop="@+id/imgFacebook"
+            android:layout_toRightOf="@+id/imgFacebook"
+            android:layout_toEndOf="@+id/imgFacebook" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/vine"
+            android:id="@+id/imgVine"
+            android:layout_alignTop="@+id/imgInstagram"
+            android:layout_toRightOf="@+id/imgInstagram"
+            android:layout_toEndOf="@+id/imgInstagram" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/youtube"
+            android:id="@+id/imgYoutube"
+            android:layout_alignTop="@+id/imgVine"
+            android:layout_toRightOf="@+id/imgVine"
+            android:layout_toEndOf="@+id/imgVine" />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/clasicos_btn"
+            android:id="@+id/imgClasicos"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/imgYoutube"
+            android:layout_toEndOf="@+id/imgYoutube"
+            android:layout_alignTop="@+id/imgYoutube"
+            android:layout_alignBottom="@+id/imgYoutube" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/tvcultura_cultura"
+            android:id="@+id/imgTVCultura"
+            android:layout_below="@+id/pager"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/guadalajara_fm_cultura"
+            android:id="@+id/imgFMGuadalajara"
+            android:layout_below="@+id/imgTVCultura"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/vallarta_fm_cultura"
+            android:id="@+id/imgFMVallarta"
+            android:layout_below="@+id/imgFMGuadalajara"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="PROGRAMACIÓN"
+            android:gravity="center"
+            android:id="@+id/txvTituloProgNoticias"
+            android:layout_alignRight="@+id/imgClasicos"
+            android:layout_alignEnd="@+id/imgClasicos"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:background="#848484"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+</RelativeLayout>

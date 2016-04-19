@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/access_cultura_fondo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/relative"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <!-- Accesibilidad -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/CUCEIMOBILE"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="7.25">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="ACCESIBILIDAD"
+                    android:id="@+id/textView7"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="#848484"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.75"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:weightSum="9">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3">
+
+                            <Button
+                                android:layout_width="275dp"
+                                android:layout_height="match_parent"
+                                android:text="      TV ABIERTA"
+                                android:id="@+id/btnTV"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textStyle="bold"
+                                android:layout_toStartOf="@+id/imgYoutube"
+                                android:background="#848484"
+                                android:textColor="#FFFFFF"
+                                android:layout_below="@+id/CUCEIMOBILE"
+                                android:layout_toLeftOf="@+id/imgYoutube" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/txvCanalesAbierta"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/btnTV" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3">
+
+                            <Button
+                                android:layout_width="275dp"
+                                android:layout_height="20dp"
+                                android:text="      CABLE"
+                                android:id="@+id/btnCable"
+                                android:textStyle="bold"
+                                android:background="#848484"
+                                android:textColor="#FFFFFF"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/txvCanalesAbierta"
+                                android:layout_alignRight="@+id/btnTV"
+                                android:layout_alignEnd="@+id/btnTV"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txvCanalesCable"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/btnCable" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3">
+
+                            <Button
+                                android:layout_width="275dp"
+                                android:layout_height="20dp"
+                                android:text="      RADIO"
+                                android:id="@+id/btnRadio"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textStyle="bold"
+                                android:background="#848484"
+                                android:textColor="#FFFFFF"
+                                android:layout_below="@+id/txvCanalesCable"
+                                android:layout_alignRight="@+id/btnCable"
+                                android:layout_alignEnd="@+id/btnCable"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txvCanalesRadio"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/btnRadio" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="8"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="ESCRIBENOS A: contactoc7jalisco@gmail.com"
+                            android:id="@+id/txvContacto"
+                            android:layout_above="@+id/imgLinkPagina"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_toLeftOf="@+id/btnCorreo"
+                            android:layout_toStartOf="@+id/btnCorreo"
+                            android:layout_alignTop="@+id/btnCorreo"
+                            android:textSize="18dp"
+                            android:textColor="#848484"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="9">
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_correo_noticias"
+                            android:id="@+id/btnCorreo"
+                            android:layout_above="@+id/imgLinkPagina"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5.5"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:weightSum="10" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4.5" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:weightSum="10" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:weightSum="5" >
+
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/tumblr"
+                                android:id="@+id/imgTumblr"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_weight="1" />
+
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/facebook"
+                                android:id="@+id/imgFacebook"
+                                android:layout_alignTop="@+id/imgTumblr"
+                                android:layout_toRightOf="@+id/imgTumblr"
+                                android:layout_toEndOf="@+id/imgTumblr"
+                                android:layout_weight="1" />
+
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/instagram"
+                                android:id="@+id/imgInstagram"
+                                android:layout_alignTop="@+id/imgFacebook"
+                                android:layout_toRightOf="@+id/imgFacebook"
+                                android:layout_toEndOf="@+id/imgFacebook"
+                                android:layout_weight="1" />
+
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/vine"
+                                android:id="@+id/imgVine"
+                                android:layout_alignTop="@+id/imageButton5"
+                                android:layout_toRightOf="@+id/imageButton5"
+                                android:layout_toEndOf="@+id/imageButton5"
+                                android:layout_weight="1" />
+
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/youtube"
+                                android:id="@+id/imgYoutube"
+                                android:layout_alignTop="@+id/imageButton6"
+                                android:layout_toRightOf="@+id/imageButton6"
+                                android:layout_toEndOf="@+id/imageButton6"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="6" >
+
+                    <ImageButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/clasicos_btn"
+                        android:id="@+id/imgClasicos"
+                        android:layout_below="@+id/imgEscucharRadio"
+                        android:layout_alignBottom="@+id/imageButton7"
+                        android:layout_toRightOf="@+id/imageButton7"
+                        android:layout_toLeftOf="@+id/imageButton10"
+                        android:layout_toStartOf="@+id/imageButton10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4.5" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/link_pagweb_btn"
+                    android:id="@+id/imgLinkPagina"
+                    android:layout_below="@+id/imgAccessCultura"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@+id/imageButton9" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@android:style/ButtonBar"
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#fd000000"
+        android:weightSum="1"
+        android:layout_weight="9.3" >
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="#fd000000"
+            android:layout_weight="0.39" />
+
+        <Button
+            android:id="@+id/btnInicio"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/inicio_btnx" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="#fd000000"
+            android:layout_weight="0.14" />
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/menu_btnx" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#fd000000"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:id="@+id/btnProgramacion"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:background="@drawable/prgn_btnx" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+    </LinearLayout>
+</LinearLayout>

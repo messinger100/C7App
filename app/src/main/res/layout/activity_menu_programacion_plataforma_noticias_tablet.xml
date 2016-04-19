@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".75"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4.75">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="PROGRAMACIÓN"
+                    android:gravity="center"
+                    android:id="@+id/txtNoticia0"
+                    android:layout_alignRight="@+id/imgClasicos"
+                    android:layout_alignEnd="@+id/imgClasicos"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    android:background="#A90309"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.75"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    android:layout_weight="8">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4.5"></LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/tvnoticias_noticias"
+                            android:id="@+id/imgCanal"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center"
+                            android:layout_below="@+id/txtNoticia0"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4.5"></LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="6"
+                        android:weightSum="7">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="LUN"
+                                android:id="@+id/btnLunes"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignBottom="@+id/btnMartes"
+                                android:layout_below="@+id/imgCanal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="MAR"
+                                android:id="@+id/btnMartes"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignBottom="@+id/btnMartes"
+                                android:layout_below="@+id/imgCanal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="MIÉ"
+                                android:id="@+id/btnMiercoles"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignBottom="@+id/btnMartes"
+                                android:layout_below="@+id/imgCanal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="JUE"
+                                android:id="@+id/btnJueves"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignBottom="@+id/btnMartes"
+                                android:layout_below="@+id/imgCanal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="VIE"
+                                android:id="@+id/btnViernes"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignBottom="@+id/btnMartes"
+                                android:layout_below="@+id/imgCanal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="SÁB"
+                                android:id="@+id/btnSabado"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignBottom="@+id/btnMartes"
+                                android:layout_below="@+id/imgCanal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="DOM"
+                                android:id="@+id/btnDomingo"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignBottom="@+id/btnMartes"
+                                android:layout_below="@+id/imgCanal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2">
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/scvProgramacionNoticias"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/btnLunes"
+                        android:layout_above="@+id/imgTumblr" >
+
+                        <TableLayout
+                            android:id="@+id/tblTVCultura"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/btnLunes"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_above="@+id/imgTumblr" >
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent" />
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent" />
+                        </TableLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4.5"
+                android:weightSum="9">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:weightSum="10" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4"
+                        android:weightSum="10" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4"
+                            android:weightSum="10" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="4.9" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.2"
+                                android:weightSum="10" >
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="4" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="2"
+                                    android:weightSum="5" >
+
+                                    <ImageButton
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:background="@drawable/tumblr"
+                                        android:id="@+id/imgTumblr"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:background="@drawable/facebook"
+                                        android:id="@+id/imgFacebook"
+                                        android:layout_alignTop="@+id/imgTumblr"
+                                        android:layout_toRightOf="@+id/imgTumblr"
+                                        android:layout_toEndOf="@+id/imgTumblr"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:background="@drawable/instagram"
+                                        android:id="@+id/imgInstagram"
+                                        android:layout_alignTop="@+id/imgFacebook"
+                                        android:layout_toRightOf="@+id/imgFacebook"
+                                        android:layout_toEndOf="@+id/imgFacebook"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:background="@drawable/vine"
+                                        android:id="@+id/imgVine"
+                                        android:layout_alignTop="@+id/imageButton5"
+                                        android:layout_toRightOf="@+id/imageButton5"
+                                        android:layout_toEndOf="@+id/imageButton5"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:background="@drawable/youtube"
+                                        android:id="@+id/imgYoutube"
+                                        android:layout_alignTop="@+id/imageButton6"
+                                        android:layout_toRightOf="@+id/imageButton6"
+                                        android:layout_toEndOf="@+id/imageButton6"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="4" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="4.9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="6" >
+
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/clasicos_btn"
+                                android:id="@+id/imgClasicos"
+                                android:layout_below="@+id/imgEscucharRadio"
+                                android:layout_alignBottom="@+id/imageButton7"
+                                android:layout_toRightOf="@+id/imageButton7"
+                                android:layout_toLeftOf="@+id/imageButton9"
+                                android:layout_toStartOf="@+id/imageButton9" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="6" >
+
+                        <ImageButton
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/link_pagweb_btn"
+                            android:id="@+id/imgWebLink"
+                            android:layout_below="@+id/imgAccessCultura"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBottom="@+id/imageButton8" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="#fd000000"
+            style="@android:style/ButtonBar"
+            android:weightSum="1"
+            android:layout_weight="9.25">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="#fd000000"
+                android:layout_weight="0.39" />
+
+            <!--INICIO-->
+            <Button android:id="@+id/btnInicio"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:background="@drawable/inicio_btnx"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="#fd000000"
+                android:layout_weight="0.14" />
+
+            <!--MENU-->
+            <Button android:id="@+id/btnMenu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/menu_btnx"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#fd000000"
+                android:layout_weight="0.15" />
+
+            <!--PROGRAMACIÓN-->
+            <Button android:id="@+id/btnProgramacion"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:background="@drawable/prgn_btnx" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#fd000000" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="#fd000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

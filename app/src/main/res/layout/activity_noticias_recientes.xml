@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#00000000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/footer"
+        android:id="@+id/scrollView">
+
+    </ScrollView>
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#fd000000"
+        style="@android:style/ButtonBar"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+
+        <!--INICIO-->
+        <Button android:id="@+id/btnIniciofromNoticiasRecientes"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/inicio_btnx"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+
+        <!--MENU-->
+        <Button android:id="@+id/btnMenufromNoticiasRecientes"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/menu_btnx"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+
+        <!--PROGRAMACIÓN-->
+        <Button android:id="@+id/btnProgramacionfromNoticiasRecientes"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:background="@drawable/prgn_btnx" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="#fd000000" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:id="@+id/scrol"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:layout_weight="1"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/txvNoticias">
+
+            <TableLayout
+                android:id="@+id/tblNoticiasRecientes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1dip"
+                android:isScrollContainer="true">
+
+            </TableLayout>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTICIAS RECIENTES"
+            android:gravity="center"
+            android:id="@+id/txvNoticias"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:background="#A90309"
+            android:textColor="#FFFFFF"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Cargando Noticias..."
+            android:id="@+id/txvCargandoNoticias"
+            android:layout_below="@+id/txvNoticias"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
